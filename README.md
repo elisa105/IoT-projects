@@ -8,10 +8,10 @@ This repository contains my IoT projects developed during my internship (Jul–A
 - Sensor data collection and visualization with InfluxDB and Grafana.
 
 ## Project Visuals & Documentation
-A visual overview of the system's architecture, network configuration, and data monitoring can be found in the **[images/](./images/)** folder. 
+A visual overview of the network configuration, and data monitoring can be found in the **[images/](./images/)** folder. 
 
 Specifically, the folder contains:
-* **ChirpStack Dashboards:** Screenshots of the private LoRaWAN network management and device telemetry (`chirpstack.png`).
+* **ChirpStack Dashboards:** Screenshots of the private LoRaWAN network management (`chirpstack.png`).
 * **Data Visualization:** Real-time dashboards in Grafana and sensor data logs in InfluxDB (`grafana.png`, `influx.png`).
 
 ## Structure
