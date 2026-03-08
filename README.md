@@ -1,2 +1,22 @@
-# IoT-projects
-IoT projects on Zephyr RTOS using STM32, LoRa, and sensor data visualization.
+# IoT Projects on Zephyr RTOS
+
+This repository contains my IoT projects developed during my internship (Jul–Aug 2025).  
+
+## Projects
+- STM32 Nucleo applications using GPIO, UART, I²C, and sensors.
+- LoRa point-to-point communication and private LoRaWAN network prototype (ChirpStack, SX1262 HAT).
+- Sensor data collection and visualization with InfluxDB and Grafana.
+
+## Structure
+- `abp_lorawan/` : LoRaWAN ABP examples
+- `chirpstack-docker/` : ChirpStack private network setup
+- `lora/` : LoRa point-to-point examples
+- `lorawan_adt7410/`, `lorawan_scd41/` : Sensor projects
+- `mylorawan/` : Additional LoRaWAN tests
+- `sensors/`, `sensor_scd41/` : Sensor integrations
+
+## Requirements
+- Zephyr RTOS
+- STM32 toolchain
+- LoRa SX1262 hardware (for communication projects)
+- InfluxDB & Grafana for visualization
