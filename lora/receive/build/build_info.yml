@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: '/home/elisa/zephyrproject/zephyr/samples/myprojects/lora/receive'
+    source-dir: '/home/elisa/zephyrproject/zephyr/samples/myprojects/lora/receive'
+  board:
+    name: 'nucleo_wl55jc'
+    path:
+     - '/home/elisa/zephyrproject/zephyr/boards/st/nucleo_wl55jc'
+    qualifiers: 'stm32wl55xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - '/home/elisa/zephyrproject/zephyr/dts/bindings'
+    files:
+     - '/home/elisa/zephyrproject/zephyr/boards/st/nucleo_wl55jc/nucleo_wl55jc.dts'
+    include-dirs:
+     - '/home/elisa/zephyrproject/modules/hal/ambiq/dts'
+     - '/home/elisa/zephyrproject/modules/hal/atmel/include'
+     - '/home/elisa/zephyrproject/modules/hal/bouffalolab/include'
+     - '/home/elisa/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - '/home/elisa/zephyrproject/modules/hal/gigadevice/include'
+     - '/home/elisa/zephyrproject/modules/hal/microchip/include'
+     - '/home/elisa/zephyrproject/modules/hal/microchip/dts'
+     - '/home/elisa/zephyrproject/modules/hal/nuvoton/dts'
+     - '/home/elisa/zephyrproject/modules/hal/nxp/dts'
+     - '/home/elisa/zephyrproject/modules/hal/stm32/dts'
+     - '/home/elisa/zephyrproject/modules/hal/ti/dts'
+     - '/home/elisa/zephyrproject/zephyr/include'
+     - '/home/elisa/zephyrproject/zephyr/include/zephyr'
+     - '/home/elisa/zephyrproject/zephyr/dts/common'
+     - '/home/elisa/zephyrproject/zephyr/dts/vendor'
+     - '/home/elisa/zephyrproject/zephyr/dts/rx'
+     - '/home/elisa/zephyrproject/zephyr/dts/x86'
+     - '/home/elisa/zephyrproject/zephyr/dts/xtensa'
+     - '/home/elisa/zephyrproject/zephyr/dts/sparc'
+     - '/home/elisa/zephyrproject/zephyr/dts/riscv'
+     - '/home/elisa/zephyrproject/zephyr/dts/posix'
+     - '/home/elisa/zephyrproject/zephyr/dts/arm64'
+     - '/home/elisa/zephyrproject/zephyr/dts/arm'
+     - '/home/elisa/zephyrproject/zephyr/dts/arc'
+     - '/home/elisa/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - '/home/elisa/zephyrproject/zephyr/boards/st/nucleo_wl55jc/nucleo_wl55jc_defconfig'
+     - '/home/elisa/zephyrproject/zephyr/samples/myprojects/lora/receive/prj.conf'
+    user-files:
+     - '/home/elisa/zephyrproject/zephyr/samples/myprojects/lora/receive/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: '/home/elisa/zephyr-sdk-0.17.2'
+  zephyr:
+    version: '4.2.00-rc1'
+    zephyr-base: '/home/elisa/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: '/home/elisa/zephyrproject/.venv/bin/west build -b nucleo_wl55jc . --pristine'
+  topdir: '/home/elisa/zephyrproject'
+  version: '1.4.0'

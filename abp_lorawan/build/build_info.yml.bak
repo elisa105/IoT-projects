@@ -1,0 +1,4 @@
+west:
+  command: /home/elisa/zephyrproject/.venv/bin/west build -b nucleo_wl55jc . --pristine
+  topdir: /home/elisa/zephyrproject
+  version: 1.4.0
